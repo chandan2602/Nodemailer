@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node-mailer service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <Center>
+        <div class="heading">
+        <h1>Node-mailer service</h1>
+        <p>send email easily using nodemailer app. just fill the form and click the send button to get started</p>
+        <form action="/send-email" method="post" class="email-form" id="email-form">
+            <input type="email" name="email" id="email" placeholder="Enter email id" required><br>
+            <textarea name="message" id="message" cols="20" placeholder="Enter the message here" rows="10" required></textarea><br>
+            <button type="submit" id="submit">Send Email</button>
+        </form>
+        <p class="copyright">&copy; All copyright are reserved</p>
+    </div>
+    </Center>
+    <% if (typeof status !== 'undefined' && status && typeof message !==
+'undefined' && message) { %>
+<div class="status-message <%= status %>"><%= message %></div>
+<% } %>
+</div>
+
+ 
+</body>
+</html>

@@ -1,0 +1,59 @@
+h1{
+   color:4px solid black;
+   font-size: 2rem;  
+}
+#email{
+    width: 44%;
+    height: 25px;
+    border: 2px solid black;
+    
+}
+#message{
+    width:44%;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+#submit{
+    width: 45%;
+    border: 2px solid black;
+    height: 27px;
+    margin-top: 5px;
+    background-color:skyblue;
+}
+body{
+    background-color: #f4f4f4;
+}
+.container{
+  background-color: white;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+
+}
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .status-message.loading {
+    background-color: #f4f4f4;
+    color: #999;
+  }
+  
+  .status-message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .status-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
